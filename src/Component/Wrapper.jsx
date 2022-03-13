@@ -1,11 +1,4 @@
 import React, { useContext } from 'react'
-import { Routes, Route, Outlet } from 'react-router-dom'
-import Dashboard from './../View/Dashboard'
-import Learning from './../View/LearningHub'
-import Erp from './../View/Erp'
-import WorkData from './../View/WorkData'
-import Users from './../View/Users'
-import CreateDrug from '../View/CreateDrug'
 import { ToggleContext } from '../App'
 
 export default function Wrapper({ children }) {
