@@ -102,7 +102,7 @@ export default function Erp({ title, crumb }) {
         <div class="col-md-12">
           <div class="card">
             <div class="card-body">
-              + Create A <Link to="/new-drug">New Drug </Link>
+              + Create A <Link to="/dashboard/new-drug">New Drug </Link>
             </div>
           </div>
         </div>
@@ -149,7 +149,6 @@ export default function Erp({ title, crumb }) {
                   <div class="form-group row">
                     <div class="col-md-6">
                       <select
-                        name=""
                         id=""
                         class="form-control"
                         name="drug"
@@ -178,7 +177,6 @@ export default function Erp({ title, crumb }) {
                       <div className="btn-box">
                         {inputList.length !== 1 && (
                           <button
-                            className="mr10"
                             className="btn btn-danger btn-sm"
                             onClick={handleRemoveClick}
                           >

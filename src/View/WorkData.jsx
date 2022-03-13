@@ -50,6 +50,11 @@ export default function WorkData({ title, crumb }) {
     }
   }
 
+  let confirm = async (id) => {
+    let req = await APIQUERY('/data-entry/make-as-complete', 'POST', { id })
+    window.location.reload()
+  }
+
   return (
     <div>
       <BreadCrumb title={title} crumb={crumb} />
@@ -77,7 +82,10 @@ export default function WorkData({ title, crumb }) {
                       <td>{request.to}</td>
                       <td>{request.fullname}</td>
                       <td>
-                        <button className="btn btn-success btn-sm">
+                        <button
+                          className="btn btn-success btn-sm"
+                          onClick={() => confirm(request._id)}
+                        >
                           Mark As Done
                         </button>
                       </td>

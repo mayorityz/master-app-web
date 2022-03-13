@@ -14,22 +14,24 @@ export default function Sidebar() {
       <div className="navigation">
         <ul>
           <li>
-            <Link to="/">Dashboard</Link>
+            <Link to="/dashboard">Dashboard</Link>
           </li>
           <li>
-            <Link to="/users">Manage Account</Link>
+            <Link to="users">Manage Account</Link>
           </li>
           <li>
-            <Link to="/learning">Learning Hub</Link>
+            <Link to="learning">Learning Hub</Link>
           </li>
           <li>
-            <Link to="/work-data">Field Report</Link>
+            <Link to="work-data">Field Report</Link>
           </li>
           <li>
-            <Link to="/erp">Requisitions</Link>
+            <Link to="erp">Requisitions</Link>
           </li>
           <li>
-            <Link to="/#">Logout</Link>
+            <Link to="/#" onClick={() => localStorage.removeItem('_masterapp')}>
+              Logout
+            </Link>
           </li>
         </ul>
       </div>

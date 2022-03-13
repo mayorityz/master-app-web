@@ -3,16 +3,35 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Login from './View/Auth/Login'
+import Dashboard from './View/Dashboard'
+import Users from './View/Users'
+import Erp from './View/Erp'
+import WorkData from './View/WorkData'
+import LearningHub from './View/LearningHub'
+import CreateDrug from './View/CreateDrug'
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    {/* <App /> */}
+    <Routes path="/">
+      <Route index element={<Login />} />
+      <Route path="/dashboard" element={<App />}>
+        <Route index element={<Dashboard />} />
+        <Route path="/dashboard/users" element={<Users />} />
+        <Route path="/dashboard/learning" element={<LearningHub />} />
+        <Route path="/dashboard/work-data" element={<WorkData />} />
+        <Route path="/dashboard/erp" element={<Erp />} />
+        <Route path="/dashboard/new-drug" element={<CreateDrug />} />
+      </Route>
+    </Routes>
+    {/* <Routes path="/dashboard" element={<App />}>
+      <Route index element={<Dashboard />} />
+      <Route path="/text" element={<Users />} />
+    </Routes> */}
   </BrowserRouter>,
   document.getElementById('root'),
 )
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals()

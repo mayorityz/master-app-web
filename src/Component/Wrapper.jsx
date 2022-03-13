@@ -8,12 +8,12 @@ import Users from './../View/Users'
 import CreateDrug from '../View/CreateDrug'
 import { ToggleContext } from '../App'
 
-export default function Wrapper({ children, title, crumb }) {
+export default function Wrapper({ children }) {
   let toggle = useContext(ToggleContext)
-  return (
-    <div class={`content ${toggle ? '' : 'mobile_body'}`}>
-      <Routes>
-        <Route path="/">
+  return <div class={`content ${toggle ? '' : 'mobile_body'}`}>{children}</div>
+}
+/**
+ * <Route path="/">
           <Route
             index
             element={<Dashboard title="Welcome" crumb="Admin Dashboard" />}
@@ -51,13 +51,4 @@ export default function Wrapper({ children, title, crumb }) {
             }
           />
 
-          {/* Using path="*"" means "match anything", so this route
-                acts like a catch-all for URLs that we don't have explicit
-                routes for. */}
-          {/* <Route path="*" element={<NoMatch />} /> */}
-        </Route>
-      </Routes>
-      <Outlet />
-    </div>
-  )
-}
+ */
