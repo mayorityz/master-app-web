@@ -27,6 +27,7 @@ export default function Login() {
     <div className="container">
       <div className="row justify-content-center">
         <div className="col-4 align-self-center" style={{ marginTop: 150 }}>
+          <h1 className="text-center mb-5">Master App</h1>
           <h4 className="text-center">LOGIN</h4>
           <hr />
           <form action="" onSubmit={Login}>

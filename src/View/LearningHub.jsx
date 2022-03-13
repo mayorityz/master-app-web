@@ -70,7 +70,7 @@ export default function LearningHub({ title, crumb }) {
 
   return (
     <div>
-      <BreadCrumb title={title} crumb={crumb} />
+      <BreadCrumb title="Learning Hub." crumb="Learning Hub" />
 
       <div className="container-fluid">
         <div className="row">

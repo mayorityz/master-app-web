@@ -32,7 +32,7 @@ export default function Dashboard({ title, crumb }) {
 
   return (
     <div>
-      <BreadCrumb title={title} crumb={crumb} />
+      <BreadCrumb title="Welcome" crumb="Admin Dashboard" />
 
       <ContainerFluid>
         <div className="col-md-3">

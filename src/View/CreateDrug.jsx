@@ -17,7 +17,7 @@ export default function CreateDrug({ title, crumb }) {
   }
   return (
     <div>
-      <BreadCrumb title={title} crumb={crumb} />
+      <BreadCrumb title="New Drug Entry" crumb="Add Drug To Inventory" />
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-4">

@@ -114,7 +114,7 @@ export default function Users({ title, crumb }) {
 
   return (
     <div>
-      <BreadCrumb title={title} crumb={crumb} />
+      <BreadCrumb title="CHVA's History" crumb="Users' Account" />
 
       <ContainerFluid>
         <div class="col-md-6">

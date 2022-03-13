@@ -97,7 +97,7 @@ export default function Erp({ title, crumb }) {
 
   return (
     <div>
-      <BreadCrumb title={title} crumb={crumb} />
+      <BreadCrumb title="ERP Supplies Record" crumb="ERP" />
       <div class="row">
         <div class="col-md-12">
           <div class="card">

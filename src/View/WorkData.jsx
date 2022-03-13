@@ -57,7 +57,7 @@ export default function WorkData({ title, crumb }) {
 
   return (
     <div>
-      <BreadCrumb title={title} crumb={crumb} />
+      <BreadCrumb title="CHVA's Workdata Home" crumb="Work Data" />
       <ContainerFluid>
         <div className="col-md-6">
           <div className="card">
