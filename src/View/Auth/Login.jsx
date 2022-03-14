@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import APIQUERY from '../../Utils/api'
+// import Logo from '../../assets/images/masterapp_logo.png'
 
 export default function Login() {
   let [email, setEmail] = useState('')
@@ -26,7 +27,20 @@ export default function Login() {
   return (
     <div className="container">
       <div className="row justify-content-center">
-        <div className="col-4 align-self-center" style={{ marginTop: 150 }}>
+        <div className="col-md-4 align-self-center" style={{ marginTop: 150 }}>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <img
+              src="assets/images/masterapp_logo.png"
+              style={{ width: '50%', height: '50%' }}
+            />
+          </div>
+
           <h1 className="text-center mb-5">Master App</h1>
           <h4 className="text-center">LOGIN</h4>
           <hr />
