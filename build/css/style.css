@@ -125,3 +125,15 @@ body{
     text-align: right;
     font-size: 50px;
 }
+
+.landing{
+    margin-top: 150px;
+
+}
+.landing >p{
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid green;
+    padding:30px
+}
