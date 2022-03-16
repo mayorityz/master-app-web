@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-// import Logo from './anrin.jpeg'
+import Logo from './anrin.jpeg'
 import { ToggleContext } from '../App'
 
 export default function Sidebar() {
@@ -9,11 +9,7 @@ export default function Sidebar() {
   return (
     <div className={`sidebar ${toggle ? '' : 'mobile_sidebar'}`}>
       <div className="imgContainer">
-        <img
-          src="assets/images/anrin.jpeg"
-          alt=""
-          style={{ maxWidth: '100%' }}
-        />
+        <img src={Logo} alt="" style={{ maxWidth: '100%' }} />
       </div>
       <div className="navigation">
         <ul>

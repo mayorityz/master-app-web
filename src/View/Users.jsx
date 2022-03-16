@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import BreadCrumb from '../Component/BreadCrumb'
 import ContainerFluid from '../Component/ContainerFluid'
+import KwaraLogo from '../Component/KwaraLogo'
 import APIQUERY from '../Utils/api'
 
 export default function Users({ title, crumb }) {
@@ -277,6 +278,7 @@ export default function Users({ title, crumb }) {
           </div>
         </div>
       </ContainerFluid>
+      <KwaraLogo />
       <div
         class="modal fade"
         id="exampleModal"

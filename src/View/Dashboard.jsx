@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import BreadCrumb from '../Component/BreadCrumb'
 import ContainerFluid from '../Component/ContainerFluid'
+import KwaraLogo from '../Component/KwaraLogo'
 import APIQUERY from '../Utils/api'
 
 export default function Dashboard({ title, crumb }) {
@@ -54,6 +55,8 @@ export default function Dashboard({ title, crumb }) {
         <div className="col-md-4"></div>
         <div className="col-md-4"></div>
       </ContainerFluid>
+
+      <KwaraLogo />
     </div>
   )
 }
