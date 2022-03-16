@@ -5,25 +5,28 @@ export default function Landing() {
   return (
     <div className="bg_image">
       <div className="container">
-        <div className="row ">
-          <div className="col-md-6"></div>
-          <div className="col-md-6 landing">
-            <p className="text-upper">About the Master App.</p>
-            <p>
-              MasterApp is the first 3-in-1 Super App in Nigeria with a modular
-              design built for public health projects by Promane and Promade
-              Limited.
+        <div className="row justify-content-center">
+          <div className="col-md-10 landing">
+            <p className="text-upper bg_text">Welcome to Master App!</p>
+            <p className="bg_text">
+              The first 3-in-1 Super App with a modular design built for public
+              health projects by Promane and Promade Limited.
             </p>
-            <p>
+            <p className="bg_text">
               It features a learning hub for reinforcement learning, coaching
               and training of field teams, health professionals and volunteers.
               It also has an automated GIS integrated Field Report display and
-              the Enterprise Resource Planning portal for managing requisitions
-              and supply chain of consumables hence addressing public health
-              project needs all in one App.
+              an Enterprise Resource Planning portal with predictive analytics
+              for supply chain management.
+            </p>
+
+            <p className="bg_text">
+              Gain mastery of public health projects with Master App.
             </p>
             <hr />
-            <p>View Our Projects</p>
+            <p className="bg_text" style={{ fontWeight: 'bold', fontSize: 23 }}>
+              View Our Projects
+            </p>
 
             <div className="row">
               <div className="col-md-4">

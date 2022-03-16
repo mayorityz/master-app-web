@@ -9,10 +9,17 @@ export default function WorkData({ title, crumb }) {
 
   const [uid, setUid] = useState('')
   const [description, setDesc] = useState('')
-  const [quantity, setQua] = useState('')
   const [modalData, setModalData] = useState({})
 
   const [requests, setRequests] = useState([])
+
+  const [miycnc, setMiy] = useState('')
+  const [ifa, setIfa] = useState('')
+  const [sp, setSp] = useState('')
+  const [deworm, setDeworm] = useState('')
+  const [vitaminA, setVitaminA] = useState('')
+  const [ors, setOrs] = useState('')
+  const [mnp, setMnp] = useState('')
 
   useEffect(() => {
     fetchChvas()
@@ -39,14 +46,28 @@ export default function WorkData({ title, crumb }) {
 
     let body = {
       uid: modalData._id,
-      description,
-      quantity,
+      assignment: {
+        MIYCNc: miycnc,
+        IFA: ifa,
+        SP: sp,
+        Deworming: deworm,
+        VitaminA: vitaminA,
+        ORS_ZN: ors,
+        MNP: mnp,
+      },
     }
 
     console.log(body)
     let req = await APIQUERY('/data-entry/new-entry', 'POST', body)
     if (req.status === 200) {
       setDisplay('Upload Successful')
+      setMiy('')
+      setIfa('')
+      setSp('')
+      setDeworm('')
+      setVitaminA('')
+      setOrs('')
+      setMnp('')
     }
   }
 
@@ -59,7 +80,7 @@ export default function WorkData({ title, crumb }) {
     <div>
       <BreadCrumb title="CHVA's Workdata Home" crumb="Work Data" />
       <ContainerFluid>
-        <div className="col-md-6">
+        <div className="col-md-10">
           <div className="card">
             <div className="card-header">
               Record Request ({requests.length})
@@ -70,6 +91,8 @@ export default function WorkData({ title, crumb }) {
                   <tr>
                     <th>From</th>
                     <th>To</th>
+                    <th>Request By</th>
+                    <th>Request Entry</th>
                     <th>CHVA's Name</th>
                     <th>Action</th>
                     <th>Add Entry</th>
@@ -80,6 +103,8 @@ export default function WorkData({ title, crumb }) {
                     <tr key={request._id}>
                       <td>{request.from}</td>
                       <td>{request.to}</td>
+                      <td>{request.uid}</td>
+                      <td>{request.createdAt}</td>
                       <td>{request.fullname}</td>
                       <td>
                         <button
@@ -193,13 +218,7 @@ export default function WorkData({ title, crumb }) {
                     <div class="form-group row">
                       <div class="col-md-6">
                         <label for="">Description</label>
-                        <input
-                          placeholder="Enter Data Description"
-                          class="form-control"
-                          required
-                          onChange={({ target: { value } }) => setDesc(value)}
-                          value={description}
-                        />
+                        <p>MIYCNc</p>
                       </div>
                       <div class="col-md-6">
                         <label for="">Quanitity</label>
@@ -208,11 +227,116 @@ export default function WorkData({ title, crumb }) {
                           type="number"
                           class="form-control"
                           required
-                          onChange={({ target: { value } }) => setQua(value)}
-                          value={quantity}
+                          onChange={({ target: { value } }) => setMiy(value)}
+                          value={miycnc}
                         />
                       </div>
                     </div>
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <label for="">Description</label>
+                        <p>IFA</p>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="">Quanitity</label>
+                        <input
+                          placeholder=""
+                          type="number"
+                          class="form-control"
+                          required
+                          onChange={({ target: { value } }) => setIfa(value)}
+                          value={ifa}
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <label for="">Description</label>
+                        <p>SP</p>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="">Quanitity</label>
+                        <input
+                          placeholder=""
+                          type="number"
+                          class="form-control"
+                          required
+                          onChange={({ target: { value } }) => setSp(value)}
+                          value={sp}
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <label for="">Description</label>
+                        <p>Deworming</p>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="">Quanitity</label>
+                        <input
+                          placeholder=""
+                          type="number"
+                          class="form-control"
+                          required
+                          onChange={({ target: { value } }) => setDeworm(value)}
+                          value={deworm}
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <label for="">Description</label>
+                        <p>Vitamin A</p>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="">Quanitity</label>
+                        <input
+                          placeholder=""
+                          type="number"
+                          class="form-control"
+                          required
+                          onChange={({ target: { value } }) =>
+                            setVitaminA(value)
+                          }
+                          value={vitaminA}
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <label for="">Description</label>
+                        <p>ORS/Zn</p>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="">Quanitity</label>
+                        <input
+                          placeholder=""
+                          type="number"
+                          class="form-control"
+                          required
+                          onChange={({ target: { value } }) => setOrs(value)}
+                          value={ors}
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <label for="">Description</label>
+                        <p>MNP</p>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="">Quanitity</label>
+                        <input
+                          placeholder=""
+                          type="number"
+                          class="form-control"
+                          required
+                          onChange={({ target: { value } }) => setMnp(value)}
+                          value={mnp}
+                        />
+                      </div>
+                    </div>
+
                     {display && (
                       <div className="text-center alert alert-primary">
                         {display}
