@@ -36,7 +36,7 @@ export default function Login() {
             }}
           >
             <img
-              src="assets/images/pnp.jpeg"
+              src="/assets/images/pnp.jpeg"
               style={{ width: '50%', height: '50%' }}
             />
           </div>
