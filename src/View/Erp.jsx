@@ -52,6 +52,13 @@ export default function Erp({ title, crumb }) {
     setInputList(list)
   }
 
+  const handleQtyChange = (e, index) => {
+    const { name, value } = e.target
+    const list = [...inputList]
+    list[index][name] = parseFloat(value)
+    setInputList(list)
+  }
+
   // handle click event of the Remove button
   const handleRemoveClick = (index) => {
     const list = [...inputList]
@@ -169,7 +176,7 @@ export default function Erp({ title, crumb }) {
                         placeholder="Qty"
                         name="qty"
                         value={x.qty}
-                        onChange={(e) => handleInputChange(e, i)}
+                        onChange={(e) => handleQtyChange(e, i)}
                         required
                       />
                     </div>
