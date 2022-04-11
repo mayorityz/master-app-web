@@ -2,62 +2,111 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Landing() {
+  // return (
+  //   <div className="bg_image">
+  //     <div className="container">
+  //       <div className="row justify-content-center">
+  //         <div className="col-md-10 landing">
+  //           <p
+  //             className="text-upper bg_text"
+  //             style={{ fontWeight: 'bold', fontSize: 35 }}
+  //           >
+  //             Welcome to Master App!
+  //           </p>
+  //           {/* <p className="bg_text">
+  //             The first 3-in-1 Super App with a modular design built for public
+  //             health projects by Promane and Promade Limited.
+  //           </p> */}
+  //           {/* <p className="bg_text">
+  //             It features a learning hub for reinforcement learning, coaching
+  //             and training of field teams, health professionals and volunteers.
+  //             It also has an automated GIS integrated Field Report display and
+  //             an Enterprise Resource Planning portal with predictive analytics
+  //             for supply chain management.
+  //           </p> */}
+
+  //           {/* <p className="bg_text">
+  //             Gain mastery of public health projects with Master App.
+  //           </p> */}
+  //           <hr />
+  //           <p className="bg_text" style={{ fontWeight: 'bold', fontSize: 23 }}>
+  //             View Our Projects
+  //           </p>
+
+  //           <div className="row">
+  //             <div className="col-md-4">
+  //               <p className="links">
+  //                 <Link to="/login">- Anrin</Link>
+  //               </p>
+  //             </div>
+  //             <div className="col-md-4">
+  //               <p className="links">
+  //                 <Link to="#">- Project Two</Link>
+  //               </p>
+  //             </div>
+  //             <div className="col-md-4">
+  //               <p className="links">
+  //                 <Link to="#">- Project Three</Link>
+  //               </p>
+  //             </div>
+  //             <div className="col-md-4">
+  //               <p className="links">
+  //                 <Link to="#">- Project Four</Link>
+  //               </p>
+  //             </div>
+  //             <div className="col-md-4">
+  //               <p className="links">
+  //                 <Link to="#">- Project Five</Link>
+  //               </p>
+  //             </div>
+  //           </div>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   </div>
+  // )
+
   return (
-    <div className="bg_image">
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-md-10 landing">
-            <p
-              className="text-upper bg_text"
-              style={{ fontWeight: 'bold', fontSize: 35 }}
-            >
-              Welcome to Master App!
-            </p>
-            {/* <p className="bg_text">
-              The first 3-in-1 Super App with a modular design built for public
-              health projects by Promane and Promade Limited.
-            </p> */}
-            {/* <p className="bg_text">
-              It features a learning hub for reinforcement learning, coaching
-              and training of field teams, health professionals and volunteers.
-              It also has an automated GIS integrated Field Report display and
-              an Enterprise Resource Planning portal with predictive analytics
-              for supply chain management.
-            </p> */}
+    <div className="bg_bg">
+      <div className="home_info_area">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-md-8 mt-5">
+              <h2 className="text-center">Welcome to Master App!</h2>
 
-            {/* <p className="bg_text">
-              Gain mastery of public health projects with Master App.
-            </p> */}
-            <hr />
-            <p className="bg_text" style={{ fontWeight: 'bold', fontSize: 23 }}>
-              View Our Projects
-            </p>
+              <hr />
 
-            <div className="row">
-              <div className="col-md-4">
-                <p className="links">
-                  <Link to="/login">- Anrin</Link>
-                </p>
-              </div>
-              <div className="col-md-4">
-                <p className="links">
-                  <Link to="#">- Project Two</Link>
-                </p>
-              </div>
-              <div className="col-md-4">
-                <p className="links">
-                  <Link to="#">- Project Three</Link>
-                </p>
-              </div>
-              <div className="col-md-4">
-                <p className="links">
-                  <Link to="#">- Project Four</Link>
-                </p>
-              </div>
-              <div className="col-md-4">
-                <p className="links">
-                  <Link to="#">- Project Five</Link>
-                </p>
+              <p>
+                The first 3-in-1 Super App with a modular design built for
+                public health projects by Promane and Promade Limited.
+              </p>
+
+              <p
+                className="bg_text"
+                style={{ fontWeight: 'bold', fontSize: 29 }}
+              >
+                View Our Projects
+              </p>
+
+              <div className="app_links">
+                <div>
+                  <Link to="/login">ANRIN</Link>
+                </div>
+                <div>
+                  <Link to="/">PROJECT ONE</Link>
+                </div>
+                <div>
+                  <Link to="/">PROJECT TWO</Link>
+                </div>
+                <div>
+                  <Link to="/">PROJECT THREE</Link>
+                </div>
+                <div>
+                  <Link to="/">PROJECT FOUR</Link>
+                </div>
+                <div>
+                  <Link to="/">PROJECT FIVE</Link>
+                </div>
               </div>
             </div>
           </div>

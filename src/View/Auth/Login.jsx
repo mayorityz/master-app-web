@@ -12,7 +12,12 @@ export default function Login() {
     try {
       let request = await APIQUERY('/users/login', 'POST', { email, password })
       if (request.data.length === 0) setMsg('User Not Found!')
-      else {
+      else if (
+        request.data[0].level === '-- LV2 --' ||
+        request.data[0].level === '-- LV1 --'
+      ) {
+        setMsg(`Unauthorized User!`)
+      } else {
         // store in local storage.
         let userDetails = request.data[0]
         localStorage.setItem('_masterapp', userDetails._id)
