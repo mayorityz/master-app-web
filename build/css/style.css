@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 /* header */
 
 body{
@@ -160,12 +161,12 @@ body{
 
 /* updated design */
 .bg_bg{
-    background-image: url("../images/anrin_bg.jpeg");
+    background-image: url("../images/analysis.jpeg");
     width: 100%;
     height: 100%;
     position: absolute;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .home_info_area{
@@ -208,4 +209,54 @@ body{
     font-size: 12px;
     color: #000;
     text-decoration: none;
+}
+
+.landing_content{
+    height: 340px;
+    width: 100%;
+    background-color: #f0f8ff85;
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    border-radius: 14px;
+    box-shadow: 0px 5px 10px -4px #000;
+    font-family: Poppins;
+}
+
+.landing_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 0px 22px;
+}
+
+.landing_nav>div>span{
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+    text-shadow: 0px 2px 6px #000;
+}
+
+.landing_nav>div>ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.landing_nav>div>ul>li{
+    padding-left: 24px;
+    margin-top: 12px;
+}
+
+.landing_nav>div>ul>li>a{
+    color: #000;
+    text-decoration: none;
+    font-family: Poppins;
+}
+
+.landing_nav>div>ul>li>a:hover{
+    color: blue;
+    text-decoration: underline;
 }

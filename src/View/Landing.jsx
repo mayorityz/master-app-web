@@ -68,10 +68,37 @@ export default function Landing() {
 
   return (
     <div className="bg_bg">
-      <div className="home_info_area">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-md-8 mt-5">
+      <nav className="landing_nav">
+        <div>
+          <span>Master App</span>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="/login">Anrin</a>
+            </li>
+            <li>
+              <a href="#">Project One</a>
+            </li>
+            <li>
+              <a href="#">Project Two</a>
+            </li>
+            <li>
+              <a href="#">Project Three</a>
+            </li>
+            <li>
+              <a href="#">Project Four</a>
+            </li>
+            <li>
+              <a href="#">Project Five</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-md-4" style={{ marginTop: 250 }}>
+            <div className="landing_content">
               <h2 className="text-center">Welcome to Master App!</h2>
 
               <hr />
@@ -80,34 +107,6 @@ export default function Landing() {
                 The first 3-in-1 Super App with a modular design built for
                 public health projects by Promane and Promade Limited.
               </p>
-
-              <p
-                className="bg_text"
-                style={{ fontWeight: 'bold', fontSize: 29 }}
-              >
-                View Our Projects
-              </p>
-
-              <div className="app_links">
-                <div>
-                  <Link to="/login">ANRIN</Link>
-                </div>
-                <div>
-                  <Link to="/">PROJECT ONE</Link>
-                </div>
-                <div>
-                  <Link to="/">PROJECT TWO</Link>
-                </div>
-                <div>
-                  <Link to="/">PROJECT THREE</Link>
-                </div>
-                <div>
-                  <Link to="/">PROJECT FOUR</Link>
-                </div>
-                <div>
-                  <Link to="/">PROJECT FIVE</Link>
-                </div>
-              </div>
             </div>
           </div>
         </div>
