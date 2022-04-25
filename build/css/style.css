@@ -253,7 +253,7 @@ body{
     position: absolute;
     width: 80%;
     height: 100%;
-    background-color: #000;
+    background-color: #000000b0;
     right: 0;
     padding-top: 60px;
 }
@@ -282,7 +282,7 @@ body{
 }
 
 
-@media screen and (max-width: 400px){
+@media only screen and (max-width: 400px){
     .landing_nav>div>ul{
         display: none;
     }
@@ -290,7 +290,6 @@ body{
     .nav_mobile{
         display: block;
     }
-
     
 }
 
