@@ -1,7 +1,8 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { FiAlignJustify } from 'react-icons/fi'
 
 export default function Landing() {
+  const [toggle, setToggle] = useState(false)
   // return (
   //   <div className="bg_image">
   //     <div className="container">
@@ -93,6 +94,38 @@ export default function Landing() {
               <a href="#">Project Five</a>
             </li>
           </ul>
+          <span className="nav_mobile">
+            <FiAlignJustify
+              color="#000"
+              size={25}
+              onClick={() => setToggle(!toggle)}
+            />
+          </span>
+          <div
+            className="nav_sidebar_slide"
+            style={{ display: toggle ? 'block' : 'none' }}
+          >
+            <ul>
+              <li>
+                <a href="/login">- Anrin</a>
+              </li>
+              <li>
+                <a href="#">- Project One</a>
+              </li>
+              <li>
+                <a href="#">- Project Two</a>
+              </li>
+              <li>
+                <a href="#">- Project Three</a>
+              </li>
+              <li>
+                <a href="#">- Project Four</a>
+              </li>
+              <li>
+                <a href="#">- Project Five</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <div className="container">

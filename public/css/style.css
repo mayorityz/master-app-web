@@ -245,6 +245,57 @@ body{
     list-style: none;
 }
 
+.nav_mobile{
+    display: none;
+}
+
+.nav_sidebar_slide{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: #000;
+    right: 0;
+    padding-top: 60px;
+}
+
+
+.nav_sidebar_slide > ul{
+    list-style: none;
+}
+
+.nav_sidebar_slide > ul > li{
+    margin-bottom: 12px;
+    margin-left: -32px;
+    border-bottom: 1px solid #fff;
+    height: 54px;
+    padding-top: 10px;
+    padding-left: 12px;
+}
+
+.nav_sidebar_slide > ul > li >a{
+    color: #fff;
+    font-family: Poppins;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 400px){
+    .landing_nav>div>ul{
+        display: none;
+    }
+
+    .nav_mobile{
+        display: block;
+    }
+
+    
+}
+
+
+
 .landing_nav>div>ul>li{
     padding-left: 24px;
     margin-top: 12px;
