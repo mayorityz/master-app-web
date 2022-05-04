@@ -71,10 +71,11 @@ export default function Landing() {
 
               <p>
                 The first all-encompassing 3-in-1 multi-module Public Health App
-                for monitoring, evaluation, accountability and learning (MEAL).
+                for monitoring, evaluation, accountability and learning (MEAL).{' '}
               </p>
+
               <p>
-                Now you can project teams have access to GIS integrated field
+                Now your project teams have access to GIS integrated field
                 report, insights for supply chain management powered by ML and a
                 decentralized reinforcement learning hub for your field teams.
               </p>
