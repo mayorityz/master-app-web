@@ -3,69 +3,6 @@ import { FiAlignJustify } from 'react-icons/fi'
 
 export default function Landing() {
   const [toggle, setToggle] = useState(false)
-  // return (
-  //   <div className="bg_image">
-  //     <div className="container">
-  //       <div className="row justify-content-center">
-  //         <div className="col-md-10 landing">
-  //           <p
-  //             className="text-upper bg_text"
-  //             style={{ fontWeight: 'bold', fontSize: 35 }}
-  //           >
-  //             Welcome to Master App!
-  //           </p>
-  //           {/* <p className="bg_text">
-  //             The first 3-in-1 Super App with a modular design built for public
-  //             health projects by Promane and Promade Limited.
-  //           </p> */}
-  //           {/* <p className="bg_text">
-  //             It features a learning hub for reinforcement learning, coaching
-  //             and training of field teams, health professionals and volunteers.
-  //             It also has an automated GIS integrated Field Report display and
-  //             an Enterprise Resource Planning portal with predictive analytics
-  //             for supply chain management.
-  //           </p> */}
-
-  //           {/* <p className="bg_text">
-  //             Gain mastery of public health projects with Master App.
-  //           </p> */}
-  //           <hr />
-  //           <p className="bg_text" style={{ fontWeight: 'bold', fontSize: 23 }}>
-  //             View Our Projects
-  //           </p>
-
-  //           <div className="row">
-  //             <div className="col-md-4">
-  //               <p className="links">
-  //                 <Link to="/login">- Anrin</Link>
-  //               </p>
-  //             </div>
-  //             <div className="col-md-4">
-  //               <p className="links">
-  //                 <Link to="#">- Project Two</Link>
-  //               </p>
-  //             </div>
-  //             <div className="col-md-4">
-  //               <p className="links">
-  //                 <Link to="#">- Project Three</Link>
-  //               </p>
-  //             </div>
-  //             <div className="col-md-4">
-  //               <p className="links">
-  //                 <Link to="#">- Project Four</Link>
-  //               </p>
-  //             </div>
-  //             <div className="col-md-4">
-  //               <p className="links">
-  //                 <Link to="#">- Project Five</Link>
-  //               </p>
-  //             </div>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   </div>
-  // )
 
   return (
     <div className="bg_bg">
@@ -76,22 +13,21 @@ export default function Landing() {
         <div>
           <ul>
             <li>
-              <a href="/login">Anrin</a>
+              <a href="/login" style={{ color: 'green' }}>
+                ANRIN
+              </a>
             </li>
             <li>
-              <a href="#">Project One</a>
+              <a href="#">P1</a>
             </li>
             <li>
-              <a href="#">Project Two</a>
+              <a href="#">P2</a>
             </li>
             <li>
-              <a href="#">Project Three</a>
+              <a href="#">P3</a>
             </li>
             <li>
-              <a href="#">Project Four</a>
-            </li>
-            <li>
-              <a href="#">Project Five</a>
+              <a href="#">P4</a>
             </li>
           </ul>
           <span className="nav_mobile">
@@ -107,22 +43,19 @@ export default function Landing() {
           >
             <ul>
               <li>
-                <a href="/login">- Anrin</a>
+                <a href="/login">- ANRIN</a>
               </li>
               <li>
-                <a href="#">- Project One</a>
+                <a href="#">- P1</a>
               </li>
               <li>
-                <a href="#">- Project Two</a>
+                <a href="#">- P2</a>
               </li>
               <li>
-                <a href="#">- Project Three</a>
+                <a href="#">- P3</a>
               </li>
               <li>
-                <a href="#">- Project Four</a>
-              </li>
-              <li>
-                <a href="#">- Project Five</a>
+                <a href="#">- P4</a>
               </li>
             </ul>
           </div>
@@ -137,8 +70,13 @@ export default function Landing() {
               <hr />
 
               <p>
-                The first 3-in-1 Super App with a modular design built for
-                public health projects by Promane and Promade Limited.
+                The first all-encompassing 3-in-1 multi-module Public Health App
+                for monitoring, evaluation, accountability and learning (MEAL).
+              </p>
+              <p>
+                Now you can project teams have access to GIS integrated field
+                report, insights for supply chain management powered by ML and a
+                decentralized reinforcement learning hub for your field teams.
               </p>
             </div>
           </div>
