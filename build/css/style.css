@@ -311,6 +311,13 @@ body{
     height: 100%;
 }
 
+.kwara_logo{
+    position: absolute; 
+    bottom: 0px; 
+    right: 0px;
+    margin: 10px;
+}
+
 
 @media only screen and (max-width: 400px){
     .landing_nav>div>ul{
@@ -319,6 +326,14 @@ body{
 
     .nav_mobile{
         display: block;
+    }
+
+    .kwara_logo{
+        position: relative !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
     }
     
 }
@@ -366,4 +381,10 @@ body{
     color: blue;
     text-shadow: 1px 4px 3px #0000002e;
     border-color: green;
+}
+
+.kwara_logo{
+    position: absolute; 
+    bottom: 0px; 
+    right: 0px
 }

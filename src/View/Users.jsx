@@ -278,7 +278,7 @@ export default function Users({ title, crumb }) {
           </div>
         </div>
       </ContainerFluid>
-      <KwaraLogo />
+      {/* <KwaraLogo /> */}
       <div
         class="modal fade"
         id="exampleModal"
