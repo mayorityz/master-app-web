@@ -7,8 +7,9 @@ export default function Landing() {
   return (
     <div className="bg_bg">
       <nav className="landing_nav">
-        <div>
-          <span>Master App</span>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <span style={{ marginRight: 20 }}>Master App</span>
+          <img src="images/pnp-removebg.png" style={{ width: 50 }} />
         </div>
         <div>
           <ul>
