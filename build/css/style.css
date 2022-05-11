@@ -318,6 +318,11 @@ body{
     margin: 10px;
 }
 
+.control_content{
+    margin-top: 250px;
+    margin-left: 20px;
+}
+
 
 @media only screen and (max-width: 400px){
     .landing_nav>div>ul{
@@ -334,6 +339,10 @@ body{
         justify-content: center;
         align-items: center;
         margin-top: 40px;
+    }
+
+    .control_content{
+        margin-top: 100px;
     }
     
 }

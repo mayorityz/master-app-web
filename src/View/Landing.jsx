@@ -18,9 +18,6 @@ export default function Landing() {
               </a>
             </li>
             <li>
-              <a href="#">P1</a>
-            </li>
-            <li>
               <a href="#">P2</a>
             </li>
             <li>
@@ -28,6 +25,9 @@ export default function Landing() {
             </li>
             <li>
               <a href="#">P4</a>
+            </li>
+            <li>
+              <a href="#">P5</a>
             </li>
           </ul>
           <span className="nav_mobile">
@@ -46,9 +46,6 @@ export default function Landing() {
                 <a href="/login">- ANRIN</a>
               </li>
               <li>
-                <a href="#">- P1</a>
-              </li>
-              <li>
                 <a href="#">- P2</a>
               </li>
               <li>
@@ -57,13 +54,16 @@ export default function Landing() {
               <li>
                 <a href="#">- P4</a>
               </li>
+              <li>
+                <a href="#">- P5</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-md-4" style={{ marginTop: 250 }}>
+          <div className="col-md-4 control_content">
             <div className="landing_content">
               <h2 className="text-center">Welcome to Master App!</h2>
 
