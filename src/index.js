@@ -12,6 +12,7 @@ import WorkData from './View/WorkData'
 import LearningHub from './View/LearningHub'
 import CreateDrug from './View/CreateDrug'
 import Landing from './View/Landing'
+import PrivacyPolicy from './View/PrivacyPolicy'
 
 ReactDOM.render(
   <BrowserRouter>
@@ -19,6 +20,7 @@ ReactDOM.render(
     <Routes path="/">
       <Route index element={<Landing />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/dashboard" element={<App />}>
         <Route index element={<Dashboard />} />
         <Route path="/dashboard/users" element={<Users />} />

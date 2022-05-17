@@ -80,6 +80,15 @@ export default function Landing() {
                 report, insights for supply chain management powered by ML and a
                 decentralized reinforcement learning hub for your field teams.
               </p>
+
+              <a
+                href="/privacy-policy"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textAlign: 'center', color: '#000' }}
+              >
+                Privacy Policy
+              </a>
             </div>
           </div>
         </div>
