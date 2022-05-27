@@ -3,6 +3,7 @@ import BreadCrumb from '../Component/BreadCrumb'
 import ContainerFluid from '../Component/ContainerFluid'
 import KwaraLogo from '../Component/KwaraLogo'
 import APIQUERY from '../Utils/api'
+import { Link } from 'react-router-dom'
 
 export default function Users({ title, crumb }) {
   const [users, setUsers] = useState([])
@@ -253,7 +254,9 @@ export default function Users({ title, crumb }) {
                   {users.map((user) => (
                     <tr>
                       <td>
-                        {user.firstname} {user.lastname}
+                        <Link to={`user-profile/${user._id}`}>
+                          {user.firstname} {user.lastname}
+                        </Link>
                       </td>
                       <td>{user.email}</td>
                       <td>{user.level}</td>

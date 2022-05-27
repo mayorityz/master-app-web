@@ -13,6 +13,7 @@ import LearningHub from './View/LearningHub'
 import CreateDrug from './View/CreateDrug'
 import Landing from './View/Landing'
 import PrivacyPolicy from './View/PrivacyPolicy'
+import UserProfile from './View/UserProfile'
 
 ReactDOM.render(
   <BrowserRouter>
@@ -28,6 +29,10 @@ ReactDOM.render(
         <Route path="/dashboard/work-data" element={<WorkData />} />
         <Route path="/dashboard/erp" element={<Erp />} />
         <Route path="/dashboard/new-drug" element={<CreateDrug />} />
+        <Route
+          path="/dashboard/users/user-profile/:userid"
+          element={<UserProfile />}
+        />
       </Route>
     </Routes>
     {/* <Routes path="/dashboard" element={<App />}>
